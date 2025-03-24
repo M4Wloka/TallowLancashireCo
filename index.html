@@ -4,52 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="/pages/fonts.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/pages/buttons.css">
 </head>
 <body>
-  <!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" 
-          content="width=device-width,
-                   initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Responsive Navbar</title>
-
-</head>
-
-<body>
-    <nav class="navbar">
-        <div class="logo">
-            <a href="#">MyLogo</a>
+  <!-- banner image -->
+   
+  <!-- text on banner -->
+  <div class="hero-banner">
+    <img src="/components/tallow-hero-bg.jpeg" alt="Hero Background">
+    <div class="hero-text">
+      <h1>LANCASHIRE TALLOW 
+        COOK SMARTER AND LIVE BETTER</h1>
+      <p>Discover the Benefits of Cooking with Our Organic Tallow: Sourced from Pasture-Raised Beef, High Smoke Point for Versatile Cooking, and Packed with Health-Promoting Nutrients!</p>
+      <div class="two-buttons">
+        <!-- Button One (already properly sized) -->
+        <div class="btn btn-one">
+          <span>BUTTON ONE</span>
         </div>
-        <ul class="nav-links">
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <div class="menu-toggle">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+        
+        <!-- Button Two wrapped in a container -->
+        <div class="btn">
+          <button class="button-two">BUTTON TWO</button>
         </div>
-    </nav>
+      </div>
+    </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const menuToggle = document.querySelector('.menu-toggle');
-            const navLinks = document.querySelector('.nav-links');
 
-            menuToggle.addEventListener('click', () => {
-                navLinks.classList.toggle('active');
-            });
-        });
-    </script>
-</body>
-
-</html>
-
+    </div>
 </body>
 </html>
