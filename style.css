@@ -55,13 +55,22 @@ body {
   .figure-title {
     color: black;
   }
+  .figures-positioning{
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+  }
   figure {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 340px;
-    height: 500px;
+    max-width: 340px;
+    max-height: 500px;
     border-radius: 10px;
     box-shadow: 
       0 1px 3px rgba(0,0,0,0.12), 
@@ -78,7 +87,7 @@ body {
   
   figure:hover h1 {
     opacity: 0;
-    transform: scale(0.7);
+    transform: scale(0.);
   }
   
   figure:hover img {
@@ -103,7 +112,7 @@ body {
   figure img {
     height: 100%;
     transition: 0.25s;
-    filter: brightness(75%);
+    filter: brightness(60%);
     object-fit: cover;
 
   }
@@ -125,12 +134,13 @@ body {
   figure figcaption h3 {
     margin: 0 0 40px;
     padding: 0;
+    font-size: 20px;
   }
   
-  /* figure figcaption p {
+  figure figcaption p {
     font-size: 14px;
     line-height: 1.75;
-  } */
+  }
 
   
   @media screen and (max-width: 601px) {
@@ -151,8 +161,8 @@ body {
       
       
       figure figcaption {
-        bottom: -30%; 
-        /* padding: 10%; */
+        bottom: -40%; 
+        padding: 10%;
         left:-8%;
       }
       
@@ -174,6 +184,31 @@ body {
             max-height: 30%;
           }
 
+          figure {
+            width: 300px;
+            min-height: 200px;
+            border-radius: 8px;
+            display: flex;
+            flex-wrap: wrap;
+          }
+    
+          figure h1 {
+            left: 15px;
+          }
+          
+          
+          figure figcaption {
+            bottom: -32%; 
+            padding: 10%;
+            left:-8%;
+          }
+
+          figure figcaption h3 {
+            margin: 0 0 50px;
+            padding: 0;
+            font-size: 15px;
+          }
+
 
 
 
@@ -187,6 +222,21 @@ body {
             max-width: 25%;
             max-height: 30%;
           }
+
+          figure figcaption {
+            /* bottom: -40%;  */
+            padding: 10%;
+            left:-8%;
+          }
+
+          figure figcaption h3 {
+            margin: 0 0 40px;
+            padding: 0;
+            font-size: 16px;
+          }
+          figure h1 {
+            font-size: 22px;
+          }
     }
     @media screen and (max-width: 1200px) {
         .white-logo-banner {
@@ -196,6 +246,13 @@ body {
     }
 
     @media screen and (max-width: 1400px) {
+        .white-logo-banner {
+            max-width: 15%;
+            max-height: 30%;
+          }
+    }
+
+    @media screen and (min-width: 1400px) {
         .white-logo-banner {
             max-width: 15%;
             max-height: 30%;
