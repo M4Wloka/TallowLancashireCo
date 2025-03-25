@@ -52,14 +52,15 @@ body {
     filter: brightness(100%);
     
   }
-
+  .figure-title {
+    color: black;
+  }
   figure {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 340px;
-    /* min-width: 340px; */
     height: 500px;
     border-radius: 10px;
     box-shadow: 
@@ -102,6 +103,9 @@ body {
   figure img {
     height: 100%;
     transition: 0.25s;
+    filter: brightness(75%);
+    object-fit: cover;
+
   }
   
   figure figcaption {
@@ -130,6 +134,9 @@ body {
 
   
   @media screen and (max-width: 601px) {
+    .hero-banner{
+        height: 800px;
+    }
     figure {
         width: 300px;
         min-height: 200px;
@@ -141,7 +148,7 @@ body {
       
       figure figcaption {
         bottom: -30%; 
-        padding: 10%;
+        /* padding: 10%; */
         left:-8%;
       }
       
