@@ -7,7 +7,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 600px;
+    height: 100vh;
     position: relative;
     overflow: hidden;
   }
@@ -111,9 +111,9 @@ body {
   figure figcaption {
     position: absolute;
     bottom: -34%;
-    left: 0;
+    /* left: 0; */
     width: 100%;
-    margin: 0;
+    /* margin: 0; */
     padding: 30px;
     background-color: rgba(0, 0, 0, 0.85);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
@@ -144,6 +144,10 @@ body {
         display: flex;
         flex-wrap: wrap;
       }
+
+      figure h1 {
+        left: 10px;
+      }
       
       
       figure figcaption {
@@ -155,9 +159,45 @@ body {
       figure:hover figcaption {
         bottom: 0;
       }
-      .white-logo-banner img {
-        max-width: 30%;
-        max-height: 30%;
+      .white-logo-banner {
+        min-width: 50%;
       }
     }
-  
+
+    @media screen and (max-width: 768px) {
+        .hero-banner{
+            height: 800px;
+        }
+        .white-logo-banner {
+            max-width: 30%;
+            min-width: 25%;
+            max-height: 30%;
+          }
+
+
+
+
+    }
+
+    @media screen and (max-width: 1024px) {
+        .hero-banner{
+            height: 800px;
+        }
+        .white-logo-banner {
+            max-width: 25%;
+            max-height: 30%;
+          }
+    }
+    @media screen and (max-width: 1200px) {
+        .white-logo-banner {
+            max-width: 20%;
+            max-height: 30%;
+          }
+    }
+
+    @media screen and (max-width: 1400px) {
+        .white-logo-banner {
+            max-width: 15%;
+            max-height: 30%;
+          }
+    }
