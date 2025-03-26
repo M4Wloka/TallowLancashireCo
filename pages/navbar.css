@@ -161,6 +161,20 @@ video {
 	}
 }
 
+.menu-icon {
+    width: 24px; /* Match your icon size */
+    height: 24px;
+    margin-right: 8px; /* Space between icon and text */
+    vertical-align: middle;
+    transition: all 0.3s ease; /* Optional: for hover effects */
+  }
+  
+  /* Optional: Hover effects */
+  .menu-link:hover .menu-icon {
+    transform: scale(1.1);
+    opacity: 0.9;
+  }
+
 @media only screen and (min-width: 768px) {
 	.header {
 		background: var(--color-white);
