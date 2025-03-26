@@ -150,8 +150,16 @@ video {
 }
 
 .menu-icon {
-	font-size: 1.35rem;
-	color: inherit;
+    width: 24px; /* Fixed width */
+    height: 24px; /* Fixed height */
+    border-radius: 0; /* Removes circular rounding */
+    background: transparent; /* Ensures no background circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.35rem; /* Adjust icon size if needed */
+    color: inherit;
+    transition: all 0.3s ease;
 }
 
 .menu-name {
@@ -175,20 +183,22 @@ video {
 @media only screen and (min-width: 576px) {
 	.menu-list {
 		justify-content: center;
-		column-gap: 3rem;
+		column-gap: 4rem;
+        margin-top: 1%;
+        /* margin-bottom: 2%; */
 	}
 }
 
 .menu-icon {
-    width: 24px; /* Match your icon size */
-    height: 24px; 
+    width: 25px; 
+    height: 25px; 
     vertical-align: middle;
-    transition: all 0.3s ease; /* Optional: for hover effects */
+    transition: all 0.3s ease; 
   }
   
-  /* Optional: Hover effects */
   .menu-link:hover .menu-icon {
     transform: scale(1.1);
+    background: var(--color-beige-200);
     opacity: 0.9;
   }
 
@@ -223,8 +233,8 @@ video {
 		content: "";
 		left: 0;
 		bottom: 0;
-		width: 2rem;
-		height: 2px;
+		width: 2.5rem;
+		height: 5px;
 		background: var(--color-brown-800);
 	}
 
@@ -239,8 +249,9 @@ video {
 	}
 
 	.menu-name {
-		font-size: 1rem;
+		font-size: 1.5rem;
 		font-weight: 500;
-		margin-bottom: 0.2rem;
+		margin-bottom: 1rem;
+        /* margin-top: 1rem; */
 	}
 }
