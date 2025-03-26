@@ -36,26 +36,26 @@ p, .p {
 }
 
 /* tablet styles fonts */
-@media screen and (min-width: 601px) {
+@media screen and (max-width: 601px) {
     h1, .h1 {
-        font-size: 2.5rem;
+        font-size: 1rem;
     }
 
     h2 {
-        font-size: 2rem;
+        font-size: 0.8rem;
     }
 
     h3 {
-        font-size: 1.5rem;
+        font-size: 0.6rem;
     }
 
     p {
-        font-size: 1rem;
+        font-size: 0.4rem;
     }
 }
 
 /* laptop/desktop styles fonts */
-@media screen and (min-width: 1025px) {
+@media screen and (max-width: 1025px) {
     h1, .h1 {
         font-size: 1.5rem;
     }
@@ -72,3 +72,22 @@ p, .p {
         font-size: 1.5rem;
     }
 }
+
+@media screen and (max-width: 1200px) {
+    h1, .h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+}
+
