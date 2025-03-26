@@ -150,7 +150,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: blanchedalmond;
+    background-color: #AD8B73;
     padding: 3rem;
     gap:0.1rem;
     
@@ -204,7 +204,7 @@ body {
 
 
       footer {
-        background-color: #fffefe;
+        background-color: #AD8B73;
         padding: 20px 0;
         text-align: center;
     }
@@ -320,7 +320,7 @@ body {
               
               
               figure figcaption {
-                bottom: -32%; 
+                bottom: -45%; 
                 /* padding: 10%;
                 left:-8%; */
               }
@@ -372,15 +372,12 @@ body {
 
 
           figure figcaption {
-            bottom: -33%; 
-            /* padding: 10%;
-            left:-8%; */
+            bottom: -20%; 
           }
 
           figure figcaption h3 {
             margin: 0 0 40px;
             padding: 0;
-            /* font-size: 16px; */
           }
           
     }
@@ -388,6 +385,16 @@ body {
         .white-logo-banner {
             max-width: 20%;
             max-height: 30%;
+          }
+          figure figcaption {
+            bottom: -43%; 
+            /* padding: 10%;
+            left:-8%; */
+          }
+
+          figure figcaption h3 {
+            margin: 0 0 50px;
+            padding: 0;
           }
 
 

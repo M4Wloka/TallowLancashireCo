@@ -169,6 +169,7 @@ video {
 		visibility: visible;
 	}
 
+
 }
 
 @media only screen and (min-width: 576px) {
@@ -191,6 +192,15 @@ video {
     opacity: 0.9;
   }
 
+
+  @media only screen and (max-width: 768px) {
+    .brand{
+        visibility: hidden;
+      }
+      .logo-black{
+        visibility: hidden;
+      }
+  }
 @media only screen and (min-width: 768px) {
 	.header {
 		background: var(--color-white);
