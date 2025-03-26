@@ -57,7 +57,7 @@ body {
   }
   .figure-title {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     width: 100%;
     padding: 0 1rem;
   }
@@ -180,47 +180,6 @@ body {
     text-align: center;
   }
 
-  @media (max-width: 768px) {
-    .figures-container {
-      gap: 1.5rem;
-    }
-    
-    .figure-item {
-      flex: 1 1 280px;
-    }
-    
-    figure {
-      padding-bottom: 150%;
-    }
-    
-    figure figcaption {
-      padding: 15px;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .figures-positioning {
-      padding: 1.5rem 0.5rem;
-    }
-    
-    .figure-title {
-      margin-bottom: 1.5rem;
-    }
-    
-    .figure-item {
-      flex: 1 1 100%;
-      max-width: 100%;
-    }
-    
-    figure {
-      padding-bottom: 120%;
-    }
-    
-    figure h1 {
-      font-size: 1.5rem;
-    }
-  }
-
   .bedge-section {
     display: flex;
     flex-direction: column;
@@ -285,11 +244,6 @@ body {
 .bedge-right .bedge-image-right {
     order: 2;
 }
-
-
-  
-
-
 
       footer {
         background-color: #AD8B73;
@@ -358,7 +312,27 @@ body {
           .white-logo-banner {
             min-width: 50%;
           }
-        }
+              .figures-positioning {
+      padding: 1.5rem 0.5rem;
+    }
+    
+    .figure-title {
+      margin-bottom: 1.5rem;
+    }
+    
+    .figure-item {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+    
+    figure {
+      padding-bottom: 180%;
+    }
+    
+    figure h1 {
+      font-size: 1.5rem;
+    }
+    }
        
     
         @media screen and (max-width: 768px) {
@@ -403,7 +377,31 @@ body {
                 width: 100%;
                 max-width: 300px;
             }
-        }
+
+            .figures-container {
+                gap: 1.5rem;
+              }
+              
+              .figure-item {
+                flex: 1 1 280px;
+              }
+              
+              figure {
+                padding-bottom: 160%;
+              }
+              
+              figure figcaption {
+                padding: 15px;
+              }
+              figure figcaption h3 {
+                  font-size: 1rem;
+                }
+              figure figcaption p {
+                  font-size: 0.9rem;
+                }
+            }
+          
+        
 
     @media screen and (max-width: 1024px) {
         .hero-banner{
@@ -414,30 +412,58 @@ body {
             max-height: 30%;
           }
 
-
-
-
-          
+          figure figcaption h3 {
+            font-size: 1rem;
+          }
+        figure figcaption p {
+            font-size: 0.9rem;
+          }
     }
+
     @media screen and (max-width: 1200px) {
         .white-logo-banner {
             max-width: 20%;
             max-height: 30%;
           }
+          figure figcaption h3 {
+            font-size: 1rem;
+          }
+        figure figcaption p {
+            font-size: 0.9rem;
+          }
+      }
 
     
-}
 
     @media screen and (max-width: 1400px) {
         .white-logo-banner {
             max-width: 15%;
             max-height: 30%;
           }
+
+          figure figcaption h3 {
+            font-size: 1rem;
+          }
+        figure figcaption p {
+            font-size: 0.9rem;
+          }
+
+          
+          
+          
+
+          
     }
 
-    @media screen and (min-width: 1400px) {
+    @media screen and (min-width: 1401px) {
         .white-logo-banner {
             max-width: 15%;
             max-height: 30%;
+          }
+          figure figcaption h3 {
+            font-size: 1rem;
+          }
+        figure figcaption p {
+            font-size: 0.9rem;
           }
     }
