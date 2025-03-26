@@ -281,6 +281,63 @@ body {
       }
 
 
+      footer {
+        background-color: #fffefe;
+        padding: 20px 0;
+        text-align: center;
+    }
+    
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 20px;
+        max-width: 1200px;
+        margin: auto;
+    }
+    
+    .footer-section {
+        flex: 1;
+        min-width: 220px;
+        margin: 10px;
+    }
+    
+    .footer-section h3 {
+        color: #000000;
+        margin-bottom: 10px;
+    }
+
+    
+    
+    .footer-section p {
+        margin: 5px 0;
+    }
+    
+    .footer-section a {
+        color: #000000;
+        text-decoration: none;
+    }
+    
+    .footer-section a:hover {
+        text-decoration: underline;
+    }
+    
+    .social-icons {
+        margin-top: 10px;
+    }
+    
+    .social-icons a {
+        color: #000000;
+        margin: 0 10px;
+        text-decoration: none;
+    }
+    
+    .footer-bottom {
+        margin-top: 20px;
+        padding: 10px;
+        border-top: 1px solid #444;
+    }
+
 
 
     @media screen and (max-width: 1024px) {
