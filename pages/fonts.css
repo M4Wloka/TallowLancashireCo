@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lilita+One&display=swap');
 .abel-regular {
     font-family: "Abel", sans-serif;
     font-weight: 400;
@@ -27,6 +28,12 @@ h2 {
 h3 {
     font-family: "Inter", sans-serif;
     font-size:0.9rem;
+}
+
+h4 {
+    font-family: "Abel", sans-serif;
+    font-size:0.85rem;
+    letter-spacing: 0.2rem;
 }
 
 p, .p {

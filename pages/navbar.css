@@ -18,7 +18,7 @@
 	--shadow-large: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
 		0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lilita+One&display=swap');
 *,
 *::before,
 *::after {
@@ -32,23 +32,29 @@
 	text-rendering: optimizeLegibility;
 }
 
-.lilita-one-regular {
-    font-family: "Lilita One", sans-serif;
+.inter-regular {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-  }
-
+}
+  
+.abel-regular {
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 html {
-	font-size: 100%;
+	font-size: 80%;
 	box-sizing: inherit;
 	scroll-behavior: smooth;
 }
 
 body {
-	/* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-	font-size: 1rem;
+	font-family: "Abel", sans-serif;
+	font-size: 0.5rem;
 	font-weight: 400;
-	line-height: 1.5; */
+	line-height: 2; 
 	color: var(--color-black);
 	background: var(--color-white);
 }
@@ -81,7 +87,8 @@ video {
 }
 
 .brand {
-    font-family: "Lilita One", sans-serif;
+    font-family: "Inter", sans-serif;
+    letter-spacing: 0.1em;
 	font-size: 1rem;
 	font-weight: 700;
 	color: var(--color-black);
@@ -149,8 +156,8 @@ video {
 
 .menu-name {
 	display: none;
-	/* font-size: 0.875rem; */
-	/* font-weight: 500; */
+	font-size: 0.4rem;
+	font-weight: 400;
 	visibility: hidden;
 	text-transform: capitalize;
     text-transform: uppercase;
@@ -161,6 +168,7 @@ video {
 		display: block;
 		visibility: visible;
 	}
+
 }
 
 @media only screen and (min-width: 576px) {
@@ -172,8 +180,7 @@ video {
 
 .menu-icon {
     width: 24px; /* Match your icon size */
-    height: 24px;
-    margin-right: 8px; /* Space between icon and text */
+    height: 24px; 
     vertical-align: middle;
     transition: all 0.3s ease; /* Optional: for hover effects */
   }
