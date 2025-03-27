@@ -1,13 +1,94 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-
-html {
-  font-family: 'Montserrat', Arial, sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body {
-  background: #ffffff;
+.contact-info {
+  width: 100%;
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container {
+  width: 100%;
+  max-width: 100vh; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-title {
+  text-align: center;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.contact-title h1 {
+  font-size: 1.5rem; 
+  color: #333; 
+}
+
+.contact-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px; 
+  width: 100%;
+}
+
+.contact-map {
+  flex: 1;
+  min-width: 300px; 
+  display: flex;
+  justify-content: center;
+}
+
+.contact-map iframe {
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 4/3; 
+}
+
+.contact-info-add {
+  flex: 1;
+  min-width: 300px; 
+  text-align: center;
+}
+
+.contact-info-add h2 {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #333; 
+}
+
+.contact-info-add p{
+  font-size: 1.1rem;
+}
+
+.contact-info-add ul {
+  list-style: none;
+}
+
+.contact-info-add li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .contact-items {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-map, .contact-info-add {
+    width: 100%;
+  }
+  
+  .contact-title h1 {
+    font-size: 1.5rem;
+  }
 }
 
 button {
