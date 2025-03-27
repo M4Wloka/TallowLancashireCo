@@ -171,3 +171,36 @@
       background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
     }
   }
+
+    /* 
+  ========================
+        BUTTON THREE
+  ========================
+  */
+  .btn.primary {
+    background: white;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    
+    
+    
+  }
+
+      /* 
+  ========================
+        BUTTON FOUR
+  ========================
+  */
+  
+  .btn.secondary {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 1rem;
+  }
