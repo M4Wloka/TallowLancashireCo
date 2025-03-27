@@ -262,7 +262,7 @@ body {
   justify-content: center;
   position: relative;
   width: 95%;
-  height: 95%;
+  min-height: 95%;
   background: url('/components/photos/tallow-shops.JPG') no-repeat center center/cover;
   color: white;
   text-align: center;
