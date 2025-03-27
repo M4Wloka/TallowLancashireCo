@@ -43,7 +43,7 @@ body {
     flex-wrap: wrap;
     box-sizing: border-box;
     width: 100%;
-    top: 10%;
+    top: 4%;
   }
   
   .white-logo-banner img {
@@ -305,24 +305,24 @@ body {
         border-top: 1px solid #444;
     }
 
+    @media screen and (max-width: 401px) {
+        .white-logo-banner {
+            visibility: hidden;
+          }
+
+    }
+
     @media screen and (max-width: 601px) {
-        .hero-banner{
+    .hero-banner{
             height: 800px;
         }
-          .white-logo-banner {
-            min-width: 50%;
-          }
-              .figures-positioning {
-      padding: 1.5rem 0.5rem;
-    }
-    
     .figure-title {
       margin-bottom: 1.5rem;
     }
     
     .figure-item {
       flex: 1 1 100%;
-      max-width: 100%;
+      width: 100%;
     }
     
     figure {
