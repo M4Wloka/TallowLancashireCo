@@ -253,7 +253,7 @@ body {
     padding: 3rem;
     gap: 2rem;
     background-color: #ffffff;
-    height: 60vh;
+    height: 100vh;
 }
 
 .banner {
@@ -261,8 +261,8 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
-  width: 90%;
-  height: 90%;
+  width: 95%;
+  height: 95%;
   background: url('/components/photos/tallow-shops.JPG') no-repeat center center/cover;
   color: white;
   text-align: center;
