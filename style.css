@@ -290,7 +290,7 @@ body {
 }
 
 .content p {
-  font-size: 14px;
+  font-size: 1.2rem;
   margin-bottom: 15px;
 }
 
@@ -300,27 +300,6 @@ body {
   justify-content: center;
   flex-wrap: wrap;
 }
-
-/* .btn {
-  padding: 10px 15px;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  text-transform: uppercase;
-} */
-
-.btn.primary {
-  background: white;
-  color: black;
-}
-
-.btn.secondary {
-  background: transparent;
-  border: 1px solid white;
-  color: white;
-}
-
-
       footer {
         background-color: #AD8B73;
         padding: 20px 0;
@@ -345,14 +324,15 @@ body {
     .footer-section h3 {
         color: #000000;
         margin-bottom: 10px;
-        letter-spacing: 0.rem;
+        letter-spacing: 0.1rem;
+        font-size: 0.9rem;
     }
 
     
     
     .footer-section p {
         margin: 5px 0;
-        font-size: 1.1rem;
+        font-size: 0.9rem;
         letter-spacing: 0.1rem;
     }
     
