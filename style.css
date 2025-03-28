@@ -478,6 +478,7 @@ body {
               .content p {
                 font-size: 0.9rem; 
               }
+            }
           
         
 
@@ -552,4 +553,4 @@ body {
         figure figcaption p {
             font-size: 0.9rem;
           }
-    }
+        }
