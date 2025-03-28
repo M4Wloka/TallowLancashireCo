@@ -1,7 +1,7 @@
 .slogans-container {
   display: flex;
-  justify-content: space-around; /* or space-between */
-  align-items: flex-start; /* Align items to the top */
+  justify-content: space-around; 
+  align-items: flex-start; 
   flex-wrap: wrap;
   gap: 20px;
   padding: 20px;
@@ -22,7 +22,7 @@
 .slogan img {
   width: 80px;
   height: auto;
-  margin-top: 15px; /* Adds space between text and image */
+  margin-top: 15px; 
 }
 
 .slogan h1 {
@@ -35,7 +35,7 @@
   font-size: 1rem;
   color: #666;
   line-height: 1.4;
-  margin-bottom: 10px; /* Ensures spacing before the image */
+  margin-bottom: 10px; 
 }
 
 .how-to-do{
