@@ -10,4 +10,19 @@ menuLinks.forEach((link) => {
 	});
 });
 
-// CONTACT FORM
+//timeline 
+var s = skrollr.init({
+	smoothScrolling: true,
+	mobileDeceleration: 0.004
+  });
+  
+  delayAnimation();
+  
+  function delayAnimation() {
+	var animatedEl = document.getElementById('bounce');
+	animatedEl.className = '';
+	setTimeout(function() {
+	  animatedEl.className = 'bounce'
+	  setTimeout(delayAnimation, 1000)
+	}, 1500)
+  }
