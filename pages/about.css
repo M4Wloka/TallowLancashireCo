@@ -8,8 +8,9 @@
 }
 
 body {
-  background: #08070a;
+  background: #AD8B73;
 }
+
 
 .timeline {
   position: relative;
@@ -72,7 +73,7 @@ body {
   left: 50%;
 }
 
-.container svg {
+.container .timeline-icon {
   position: absolute;
   background: #fff;
   padding: 5px;
@@ -82,9 +83,10 @@ body {
   right: -22px;
   top: 32px;
   z-index: 10;
+  object-fit: cover;
 }
 
-.right-container svg {
+.right-container .timeline-icon {
   left: -18px;
 }
 
