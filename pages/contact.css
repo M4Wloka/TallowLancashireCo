@@ -84,6 +84,7 @@
   
   .contact-map, .contact-info-add {
     width: 100%;
+    margin-left: -6%;
   }
   
   .contact-title h1 {
