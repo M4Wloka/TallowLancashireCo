@@ -11,18 +11,26 @@ menuLinks.forEach((link) => {
 });
 
 //timeline 
-var s = skrollr.init({
-	smoothScrolling: true,
-	mobileDeceleration: 0.004
+const swiper = new Swiper('.swiper-container', {
+	effect: 'coverflow',
+	grabCursor: true,
+	centeredSlides: true,
+	slidesPerView: 'auto',
+	initialSlide: 3,
+	coverflowEffect: {
+	  slideShadows: true,
+	  rotate: 0,
+	  stretch: 450,
+	  depth: 250,
+	  modifier: 1
+	}
   });
-  
-  delayAnimation();
-  
-  function delayAnimation() {
-	var animatedEl = document.getElementById('bounce');
-	animatedEl.className = '';
-	setTimeout(function() {
-	  animatedEl.className = 'bounce'
-	  setTimeout(delayAnimation, 1000)
-	}, 1500)
-  }
+
+swiper.on('transitionEnd', () => {
+getSlideContent()
+})
+
+function getSlideContent () {
+const ActiveSlide = document.querySelector('.swiper-slide-active')
+console.log(ActiveSlide.innerText)
+}
