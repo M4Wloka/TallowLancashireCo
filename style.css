@@ -426,6 +426,7 @@ body {
             .bedge-left {
                 flex-direction: column;
                 gap: 2rem;
+                width: 100%;
             }
             
             .bedge-text-right,
@@ -441,6 +442,7 @@ body {
             .bedge-right .bedge-text-right,
             .bedge-right .bedge-image-right {
                 order: 0;
+                width: 100%;
             }
             
             .bedge-image-right img,
@@ -448,6 +450,13 @@ body {
                 width: 100%;
                 max-width: 300px;
             }
+            .btn {
+              width: 100%;
+              display: flex;
+              justify-content: center; 
+              align-items: center;
+          }
+
 
             .figures-container {
                 gap: 1.5rem;
