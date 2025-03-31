@@ -212,7 +212,7 @@ body {
     width: 100%;
     width: 200px;
     height: auto;
-    min-height: 280px;
+    min-height: 300px;
   }
   
   .box:hover ~ .box {
