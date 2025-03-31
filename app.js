@@ -10,4 +10,3 @@ menuLinks.forEach((link) => {
 	});
 });
 
-//timeline 
