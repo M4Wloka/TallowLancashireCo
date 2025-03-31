@@ -1,7 +1,7 @@
 class ParallaxTiltEffect {
   constructor({element, tiltEffect}) {
     this.element = element;
-    this.container = this.element.querySelector(".container");
+    this.container = this.element.querySelector(".container-products");
     this.size = [300, 360];
     [this.w, this.h] = this.size;
 
@@ -31,7 +31,7 @@ class ParallaxTiltEffect {
 
   handleMouseEnter() {
     this.mouseOnComponent = true;
-    this.container.classList.add("container--active");
+    this.container.classList.add("container-products--active");
   }
 
   handleMouseLeave() {
@@ -40,7 +40,7 @@ class ParallaxTiltEffect {
   }
 
   defaultStates() {
-    this.container.classList.remove("container--active");
+    this.container.classList.remove("container-products--active");
     this.setProperty('--rY', 0);
     this.setProperty('--rX', 0);
     this.setProperty('--bY', '80%');
