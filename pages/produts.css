@@ -1,0 +1,14 @@
+@keyframes pageEntrance {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  body {
+    animation: pageEntrance 1s ease-in-out;
+  }  

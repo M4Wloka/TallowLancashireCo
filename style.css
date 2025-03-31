@@ -111,7 +111,24 @@ body {
     overflow: hidden;
     margin: 0;
   }
+  figure{
+    animation: click-me 3s cubic-bezier(0.12, 0, 0.39, 0) 0.3s 1 normal none;
+  }
   
+    @keyframes click-me {
+      0% {
+        transform: scale(1);
+      }
+    
+      50% {
+        transform: scale(1.1);
+      }
+    
+      100% {
+        transform: scale(1);
+      }
+    }
+
   figure:hover {
     box-shadow: 
       0 14px 28px rgba(0,0,0,0.25), 
@@ -369,6 +386,21 @@ body {
         border-top: 1px solid #444;
     }
 
+    @keyframes pageEntrance {
+      from {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+    
+    body {
+      animation: pageEntrance 1s ease-in-out;
+    }  
+
     @media screen and (max-width: 501px) {
         .white-logo-banner {
             visibility: hidden;
@@ -500,7 +532,7 @@ body {
             }
 
             
-          
+
         
 
     @media screen and (max-width: 1024px) {
