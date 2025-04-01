@@ -4,13 +4,15 @@ body {
   
   .hero-banner {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    max-height: 100vh; 
     position: relative;
     overflow: hidden;
-    gap: 5vh;
+    gap: 2vh; 
+    padding: 20px; 
+    width: 100%;
   }
   
   .hero-banner img {
@@ -18,28 +20,29 @@ body {
     height: 100%;
     object-fit: cover;
     filter: brightness(25%);
-    position: relative;
+    position: absolute; 
+    top: 0;
+    left: 0;
  
   }
   
   .hero-text {
-    position: absolute;
+    position: relative; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    flex-wrap: wrap;
     color: white;
     z-index: 1;
-    padding: 20%;
+    padding: 10%;
     width: 100%;
     box-sizing: border-box;
-    gap:2rem;
+    gap: 1rem; 
   }
   
   .white-logo-banner {
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,6 +50,7 @@ body {
     box-sizing: border-box;
     width: 100%;
     top: 9%;
+    z-index: 1;
   }
   
   .white-logo-banner img {
@@ -405,14 +409,19 @@ body {
         .white-logo-banner {
             visibility: hidden;
           }
-
+          /* .hero-banner {
+            min-height: 150vh; 
+        } */
+        
+          .hero-text {
+              padding: 5%;
+          }
     }
 
     @media screen and (max-width: 601px) {
-    .hero-banner{
-            height: 100vh;
+    /* .hero-banner{
             gap: 5vh;
-        }
+        } */
         .white-logo-banner {
           width: 75px;
           height: 75px;
@@ -529,7 +538,15 @@ body {
               .content p {
                 font-size: 0.9rem; 
               }
+              .footer-container {
+                flex-direction: column;
+                padding:1rem;
+                gap: 1.5rem;
             }
+            .footer-container{
+              min-height: 80vh;
+            }
+          }
 
             
 
