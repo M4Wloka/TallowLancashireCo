@@ -87,7 +87,7 @@ body {
     width: 100%;
     box-sizing: border-box;
     margin: 0 auto 4rem;
-    z-index: 1;
+    z-index: 2;
   }
 
   .figures-container {
@@ -508,9 +508,9 @@ footer {
               align-items: center;
           } 
 
-          .figures-positioning{
+          /* .figures-positioning{
             min-height: 160vh;
-          }
+          } */
 
             .figures-container {
                 gap: 1.5rem;
@@ -611,12 +611,6 @@ footer {
           }
     }
 
-    @media screen and (max-width: 1040px) {
-      .figures-positioning{
-        height: 120vh;
-      }
-
-    }
 
     @media screen and (max-width: 1200px) {
         .white-logo-banner {
