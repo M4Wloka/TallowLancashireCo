@@ -14,7 +14,7 @@ body {
     gap: 2vh; 
     padding: 20px; 
     width: 100%;
-    margin-top: -10%;
+    margin-top: auto;
   }
   
   .hero-banner img {
@@ -64,7 +64,7 @@ body {
   
   .figure-title {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
     width: 100%;
     padding: 0 1rem;
   }
@@ -75,15 +75,18 @@ body {
   }
   
   .figures-positioning {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem 1rem;
+    padding: 4rem 0.5rem;
     max-width: 1200px;
-    min-height: 70vh;
+    height: auto;
     margin: 0 auto;
     width: 100%;
     box-sizing: border-box;
+    margin: 0 auto 4rem;
+    z-index: 1;
   }
 
   .figures-container {
@@ -92,12 +95,14 @@ body {
     justify-content: center;
     gap: 2rem;
     width: 100%;
+    margin-bottom: 2rem;
   }
 
   .figure-item {
-    flex: 1 1 300px;
+    flex: 1 1 95%;
     max-width: 320px;
     min-width: 250px;
+    padding: 0 0.5rem;
   }
 
   figure {
@@ -183,7 +188,7 @@ body {
   
   figure figcaption {
     position: absolute;
-    bottom: -60%;
+    bottom: -100%;
     width: 100%;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.85);
@@ -278,7 +283,8 @@ body {
     padding: 3rem;
     gap: 2rem;
     background-color: #ffffff;
-    height: 80vh;
+    min-height: 80vh;
+    height: auto;
 }
 
 .banner {
@@ -498,8 +504,11 @@ footer {
               display: flex;
               justify-content: center; 
               align-items: center;
-          }
+          } 
 
+          .figures-positioning{
+            min-height: 160vh;
+          }
 
             .figures-container {
                 gap: 1.5rem;
@@ -520,8 +529,8 @@ footer {
                   font-size: 1rem;
                 }
               figure figcaption p {
-                  font-size: 0.9rem;
-                }
+                  font-size: 0.9rem; 
+                } 
                 .banner-two-positioning {
                   padding: 1rem;
                   height: auto;
@@ -539,10 +548,9 @@ footer {
               }
               .content p {
                 font-size: 0.9rem; 
-              }
-     
+              } 
               footer {
-                min-height: 44vh;
+                min-height: 50vh;
                 padding-top: 5px;        
                 padding-bottom: 5px;     
                 margin-top: -80px;       
@@ -559,8 +567,9 @@ footer {
             }
             
             .footer-bottom {
-                margin-top: 10px;       
-                padding: 5px 10px;     
+                margin-top: 10%;       
+                padding: 5px 10px; 
+                margin-bottom: 15%;    
             }
             
             .footer-section h3 {
@@ -584,12 +593,12 @@ footer {
             max-height: 30%;
           }
 
-          figure figcaption h3 {
+          /* figure figcaption h3 {
             font-size: 1rem;
           }
         figure figcaption p {
             font-size: 0.9rem;
-          }
+          } */
 
           .content h1 {
             line-height: 1.2;
@@ -600,17 +609,24 @@ footer {
           }
     }
 
+    @media screen and (max-width: 1040px) {
+      .figures-positioning{
+        height: 120vh;
+      }
+
+    }
+
     @media screen and (max-width: 1200px) {
         .white-logo-banner {
             max-width: 20%;
             max-height: 30%;
           }
-          figure figcaption h3 {
+          /* figure figcaption h3 {
             font-size: 1rem;
           }
         figure figcaption p {
             font-size: 1rem;
-          }
+          } */
       }
 
     
@@ -621,12 +637,15 @@ footer {
             max-height: 30%;
           }
 
-          figure figcaption h3 {
+          /* figure figcaption h3 {
             font-size: 1rem;
           }
         figure figcaption p {
-            font-size: 0.9rem;
+            font-size: 1rem;
           }
+          .figures-positioning{
+            min-height: auto;
+          } */
 
           
           
@@ -640,12 +659,16 @@ footer {
             max-width: 15%;
             max-height: 30%;
           }
-          figure figcaption h3 {
+          /* figure figcaption h3 {
             font-size: 1rem;
           }
         figure figcaption p {
-            font-size: 0.9rem;
+            font-size: 1rem;
           }
           .hero-banner {
             gap: 2vh;}
+        }
+        .figures-positioning{
+          min-height: 90vh;
+        } */
         }
