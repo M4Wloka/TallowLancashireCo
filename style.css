@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lilita+One&display=swap');
+
 body {
     margin: 0;
   }
@@ -294,10 +296,11 @@ body {
   position: relative;
   width: 95%;
   min-height: 95%;
-  background: url('/components/photos/tallow-shops.JPG') no-repeat center center/cover;
+  background: url('/components/photos/tallow-shop.webp') no-repeat center center/cover;
   color: white;
   text-align: center;
   padding: 20px;
+  
 }
 
 .overlay {
