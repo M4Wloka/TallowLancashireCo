@@ -10,28 +10,6 @@ menuLinks.forEach((link) => {
 	});
 });
 
-// //CLOSING THE SOCKET CONNECTION ON PAGE UNLOAD
-// window.addEventListener('unload', () => {
-// 	if (socket) {
-// 	  socket.close();
-// 	}
-//   });
-// TEXT COMPRESSOR
-document.addEventListener('DOMContentLoaded', function() {
-    const supportsBrotli = 'Accept-Encoding' in new Request('', {
-      headers: {'Accept-Encoding': 'br'}
-    });
-    
-    if (supportsBrotli) {
-      const links = document.querySelectorAll('link[rel="stylesheet"], script[src]');
-      links.forEach(el => {
-        const href = el.href || el.src;
-        if (href && !href.includes('.br')) {
-          el.href ? el.href = href + '.br' : el.src = href + '.br';
-        }
-      });
-    }
-  });
 function adjustViewportForMobile() {
 	const viewportMeta = document.querySelector('meta[name="viewport"]');
 	const screenWidth = window.innerWidth;
@@ -65,10 +43,3 @@ function adjustViewportForMobile() {
 	}
   }
   
-//   // Run on load and resize (with debounce for performance)
-//   let resizeTimeout;
-//   window.addEventListener('load', adjustViewportForMobile);
-//   window.addEventListener('resize', () => {
-// 	clearTimeout(resizeTimeout);
-// 	resizeTimeout = setTimeout(adjustViewportForMobile, 100);
-//   });
