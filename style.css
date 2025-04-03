@@ -542,7 +542,7 @@ footer {
               }
      
               footer {
-                height: 44vh;
+                min-height: 44vh;
                 padding-top: 5px;        
                 padding-bottom: 5px;     
                 margin-top: -80px;       
