@@ -5,15 +5,41 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Products</title>
         <meta name="description" content="Premium organic beef tallow products from Tallow Lancashire Co - Available in 3 sizes (30cl, 50cl, 1L). Traditional wet-rendered, pasture-raised, perfect for cooking.">
-        <link rel="stylesheet" href="/pages/navbar.css">
-        <link rel="stylesheet" href="/pages/fonts.css">
-        <link rel="stylesheet" href="../style.css">
-        <link rel="stylesheet" href="/pages/buttons.css">
-        <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <link rel="stylesheet" href="/pages/produts.css">
-          <link rel="preload" href="https://fonts.googleapis.com/css2?family=Abel&family=Inter:wght@100..900&display=swap" as="style">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abel&family=Inter:wght@100..900&display=swap">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+        <!-- Preconnect to third-party origins -->
+      <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+      <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+      
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+      
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+      
+      <!-- Stylesheets -->
+      <!-- Preload & inline critical CSS first -->
+      <link rel="preload" href="/pages/navbar.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <noscript><link rel="stylesheet" href="/pages/navbar.css"></noscript>
+      
+      <link rel="preload" href="/pages/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <noscript><link rel="stylesheet" href="/pages/fonts.css"></noscript>
+      
+      <link rel="preload" href="/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <noscript><link rel="stylesheet" href="/style.css"></noscript>
+    
+      <link rel="preload" href="/pages/produts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <noscript><link rel="stylesheet" href="/pages/products.html"></noscript>
+      
+      <link rel="preload" href="/pages/buttons.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <noscript><link rel="stylesheet" href="/pages/buttons.css"></noscript>
+      
+      <!-- Preload Font Awesome (CDN) -->
+      <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+      
+      <!-- Preload Google Fonts (with &display=swap for non-blocking behavior) -->
+      <link rel="preload" href="https://fonts.googleapis.com/css2?family=Abel&family=Inter:wght@100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abel&family=Inter:wght@100..900&display=swap"></noscript>
     
     </head>
 <body>
@@ -24,8 +50,12 @@
               <nav class="navbar container">
                 <div class="navbar-left">
                 <ul class="menu-list">
+                  <li>
                 <div class="logo-black"> <img src="/components/photos/logo-white.webp" alt="Logo Black" style="width: 60px; height: auto;"></div>
+              </li>
+              <li>
                 <a href="../index.html" class="brand" aria-label="move to home"> TALLOW LANCASHIRE CO</a>
+              </li>
               </ul>
               </div>
                 <div class="menu" id="menu">

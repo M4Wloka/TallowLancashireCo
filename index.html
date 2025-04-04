@@ -5,7 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tallow Lancashire Co </title>
   <meta name="description" content="Tallow Lancashire Co - Premium organic beef tallow from pasture-raised cattle. Perfect for high-heat cooking with health benefits. Visit our shop in Chorley or browse our products online.">
-<!-- Preconnect to third-party origins -->
+
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  
+  <!-- Helps with restoration from cache -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <!-- Preconnect to third-party origins -->
 <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
 <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
 
@@ -16,12 +23,26 @@
 <link rel="dns-prefetch" href="https://fonts.gstatic.com">
 
 <!-- Stylesheets -->
-<link rel="stylesheet" href="/pages/navbar.css">
-<link rel="stylesheet" href="/pages/fonts.css">
-<link rel="stylesheet" href="/style.css">
-<link rel="stylesheet" href="/pages/buttons.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abel&family=Inter:wght@100..900&display=swap">
+<!-- Preload & inline critical CSS first -->
+<link rel="preload" href="/pages/navbar.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/pages/navbar.css"></noscript>
+
+<link rel="preload" href="/pages/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/pages/fonts.css"></noscript>
+
+<link rel="preload" href="/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/style.css"></noscript>
+
+<link rel="preload" href="/pages/buttons.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/pages/buttons.css"></noscript>
+
+<!-- Preload Font Awesome (CDN) -->
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+
+<!-- Preload Google Fonts (with &display=swap for non-blocking behavior) -->
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Abel&family=Inter:wght@100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abel&family=Inter:wght@100..900&display=swap"></noscript>
 
 </head>
 <body>
@@ -30,9 +51,13 @@
       <nav class="navbar container">
         <div class="navbar-left">
         <ul class="menu-list">
+          <li>
         <div class="logo-black"> <img src="/components/photos/logo-white.webp" alt="Logo Black" style="width: 60px; height: 100;"></div>
+      </li>
+      <li>
         <a href="./index.html" class="brand" aria-label="Home page"> TALLOW LANCASHIRE CO</a>
         <meta name="description" content="Shop premium organic beef cooking tallow at Tallow Lancashire Co. Our pasture-raised tallow has a high smoke point for perfect cooking. Visit us in Chorley.">
+      </li>
       </ul>
       </div>
         <div class="menu" id="menu">
@@ -72,10 +97,10 @@
 <section>
   <!-- text on banner -->
   <div class="hero-banner">
-    <img src="/components/photos/tallow-hero-bg.webp" alt="Hero banner">
+    <img src="/components/photos/tallow-hero-bg.webp" alt="Hero banner" fetchpriority="high">
     
     <div class="white-logo-banner">
-      <img src="/components/photos/logo-white-tallow.webp" alt="Logo">
+      <img src="/components/photos/logo-white-tallow.webp" alt="Logo" style="width: 200px; height: auto;" loading="lazy">
     </div>
     <div class="hero-text">
       <h1>LANCASHIRE TALLOW 
@@ -84,12 +109,12 @@
       <div class="two-buttons">
         <!-- Button One  -->
         <a class="btn btn-one" href="./pages/contact.html" aria-label="Move to Contact Us">
-          <span><h4>OUR LOCATION</h4></span>
+          <span><h2>OUR LOCATION</h2></span>
         </a>
         
         <!-- Button Two  -->
         <a class="btn" href="/pages/products.html" aria-label="Move to Products">
-          <button class="button-two"><h4>PRODUCTS</h4></button>
+          <button class="button-two"><h2>PRODUCTS</h2></button>
         </a>
       </div>
     </div>
@@ -107,9 +132,9 @@
       <div class="figure-item">
         <figure class="image-block">
           <h1>ORGANIC TALLOW</h1>
-          <img src="/components/photos/tallow-cubes.webp" alt="Tallow cubes">
+          <img src="/components/photos/tallow-cubes.webp" alt="Tallow cubes" fetchpriority="high">
           <figcaption>
-            <h3>More Info</h3>
+            <h2>More Info</h2>
             <p>The tallow comes from cattle raised on organic farms, where the animals are pasture-raised, fed 100% organic feed (free from synthetic pesticides, herbicides, and GMOs), and without antibiotics or hormones.</p>
           </figcaption>
         </figure>  
@@ -118,9 +143,9 @@
       <div class="figure-item">
         <figure class="image-block">
           <h1>PASTEURISED BEEF</h1>
-          <img src="./components/photos/pastured-rasied-beef.webp" alt="Pastured Beef">
+          <img src="./components/photos/pastured-rasied-beef.webp" alt="Pastured Beef" loading="lazy">
           <figcaption>
-            <h3>More Info</h3>
+            <h2>More Info</h2>
             <p>Raised Naturally, Nourished Sustainably. Our cattle graze on local open pastures, ensuring the highest quality, nutrient-rich beef. Taste the difference of truly ethical and wholesome farming!</p>
           </figcaption>
         </figure>  
@@ -129,9 +154,9 @@
       <div class="figure-item"> 
         <figure class="image-block">
           <h1>HIGH SMOKE POINT</h1>
-          <img src="/components/photos/high-smoke-point.webp" alt="High Smoke Point">
+          <img src="/components/photos/high-smoke-point.webp" alt="High Smoke Point" loading="lazy">
           <figcaption>
-            <h3>More Info</h3>
+            <h2>More Info</h2>
             <p>Our tallow handles high heat like a professional, making it ideal for frying, searing, roasting, baking and more—without breaking down or losing its nutritional benefits and without smoked kitchen.</p>
           </figcaption>
         </figure>  
@@ -143,43 +168,43 @@
 <!-- banner 2 -->
 <section>
   <div class="hero-banner">
-    <img src="/components/photos/girl-in-shop.webp" alt="Girl in the shop">
+    <img src="/components/photos/girl-in-shop.webp" alt="Girl in the shop" fetchpriority="high">
     <div class="hero-text">
       <h1>THE BEST COOKING TALLOW SHOP</h1>
-        </div>
-        </div>
+    </div>
+  </div>
 </section>
 
 <section>
   <div class="bedge-section">
     <div class="bedge-right">
         <div class="bedge-text-right">
-          <h4>EXPLORE OUR STORE, FIND THE BEST COOKING TALLOW!</h4>
-            <h1>CHECK OUT AVAILABLE PRODUCTS!</h1>
+          <h2>EXPLORE OUR STORE, FIND THE BEST COOKING TALLOW!</h2>
+            <h3>CHECK OUT AVAILABLE PRODUCTS!</h3>
             <p>Pure, nutrient-rich beef tallow, slow-rendered the traditional wet way for superior quality and flavor. Choose from 3 sizes. Perfect for cooking, skincare, and more! Try it today!</p>
             <a class="btn" href="./pages/products.html" aria-label="Move to Products">
-              <button class="button-two"><h4>PRODUCTS</h4></button>
+              <button class="button-two"><span>PRODUCTS</span></button>
             </a>
         </div>
         <div class="bedge-image-right">
-            <img src="/components/photos/multiple-tallow-jars.webp" alt="Multiple Tallow Jars">
+          <img src="/components/photos/multiple-tallow-jars.webp" alt="Multiple Tallow Jars" style="width: 100%; max-width: 600px; height: auto;" loading="lazy">
         </div>
     </div>
 
     <div class="bedge-left">
         <div class="bedge-text-left">
-            <h4>WE ARE OPEN EVERY SINGLE DAY</h4>
-            <h1>WE OPEN THE DOORS EVERYDAY AT 9:00. COME SAY HELLO!</h1>
+            <h2>WE ARE OPEN EVERY SINGLE DAY</h2>
+            <h3>WE OPEN THE DOORS EVERYDAY AT 9:00. COME SAY HELLO!</h3>
             <p>Our friendly team is here to welcome you with a smile every day at 9:00! Whether you're picking up tallow or just stopping by, we’re happy to help, share tips, or chat about our products. Come say hello, we’d love to meet you!</p>
             <a class="btn" href="./pages/contact.html" aria-label="Move to Contact Us">
-              <button class="button-two"><h4>CONTACT</h4></button>
+              <button class="button-two"><span>CONTACT</span></button>
             </a>
         </div>
         <div class="bedge-image-left">
-            <img src="/components/photos/queue-tallow-shp.webp" alt="Health Promoting Nutrients">
+          <img src="/components/photos/queue-tallow-shp.webp" alt="Health Promoting Nutrients" style="width: 100%; max-width: 600px; height: auto;" loading="lazy">
         </div>
     </div>
-</div>
+  </div>
 </section>
 
 <section>
@@ -202,7 +227,7 @@
   <footer>
     <div class="footer-container">
         <div class="footer-section">
-            <h3>OPENING HOURS</h3>
+            <h2>OPENING HOURS</h2>
             <p><span>MONDAY</span> <span>9:00 - 19:00</span></p>
             <p><span>TUESDAY</span> <span>9:00 - 19:00</span></p>
             <p><span>WEDNESDAY</span> <span>9:00 - 19:00</span></p>
@@ -215,26 +240,26 @@
 
 
         <div class="footer-section">
-            <h3>MENU</h3>
+            <h2>MENU</h2>
             <p><a href="/index.html" aria-label="Move to home">HOME</a></p>
             <p><a href="/pages/about.html" aria-label="Move to about">ABOUT US</a></p>
             <p><a href="/pages/products.html" aria-label="Move to products">PRODUCTS</a></p>
             <p><a href="/pages/contact.html" aria-label="Move to contact">CONTACT</a></p>
             <br>
-            <h3>ON SOCIAL MEDIA:</h3>
+            <h2>ON SOCIAL MEDIA:</h2>
           <div class="social-icons">
               <a href="https://www.facebook.com/profile.php?id=61569199092253" aria-label="Move to facebook page"><i class="fab fa-facebook-f fa-1.5x"></i></a>
           </div>
         </div>
 
         <div class="footer-section">
-            <h3>CONTACT US</h3>
+            <h2>CONTACT US</h2>
             <p><strong>PHONE:</strong> 01257 271917</p>
             <br>
-            <h3>LOCATION</h3>
+            <h2>LOCATION</h2>
             <p> 275 Eaves Ln<br> Chorley PR6 0EY</p>
             <br>
-            <h3>TOGETHER WITH EARTHSGIFTS:</h3>
+            <h2>TOGETHER WITH EARTHSGIFTS:</h2>
             <div class="social-icons">
                 <a href="https://www.tiktok.com/@earthsgifts1111?is_from_webapp=1&sender_device=pc" aria-label="Move to tiktok"><i class="fab fa-tiktok fa-1.5x"></i></a>
 

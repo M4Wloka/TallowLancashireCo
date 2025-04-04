@@ -42,4 +42,56 @@ function adjustViewportForMobile() {
 	  );
 	}
   }
+
+
+  // Add this to your existing app.js
+document.addEventListener('DOMContentLoaded', function() {
+	// Normal page load initialization
+	
+	// Handle page restoration from bfcache
+	window.addEventListener('pageshow', function(event) {
+	  if (event.persisted) {
+		console.log('Page restored from bfcache');
+		// Reinitialize any dynamic elements if needed
+	  }
+	});
   
+	// Avoid using these as they prevent bfcache:
+	// window.onunload = function() {};
+	// window.onbeforeunload = function() {};
+  });
+  
+  document.addEventListener('DOMContentLoaded', function() {
+	const images = document.querySelectorAll('img[src*="/components/photos/"]:not([loading])');
+	
+	images.forEach(img => {
+	  // Skip if already near viewport
+	  if (isInViewport(img)) return;
+	  
+	  // Store original src
+	  const originalSrc = img.src;
+	  img.dataset.src = originalSrc;
+	  img.removeAttribute('src');
+	  
+	  // Add intersection observer
+	  const observer = new IntersectionObserver((entries) => {
+		entries.forEach(entry => {
+		  if (entry.isIntersecting) {
+			const lazyImage = entry.target;
+			lazyImage.src = lazyImage.dataset.src;
+			observer.unobserve(lazyImage);
+		  }
+		});
+	  });
+	  
+	  observer.observe(img);
+	});
+	
+	function isInViewport(element) {
+	  const rect = element.getBoundingClientRect();
+	  return (
+		rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+		rect.bottom >= 0
+	  );
+	}
+  });
