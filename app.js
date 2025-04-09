@@ -43,23 +43,6 @@ function adjustViewportForMobile() {
 	}
   }
 
-
-  // Add this to your existing app.js
-document.addEventListener('DOMContentLoaded', function() {
-	// Normal page load initialization
-	
-	// Handle page restoration from bfcache
-	window.addEventListener('pageshow', function(event) {
-	  if (event.persisted) {
-		console.log('Page restored from bfcache');
-		// Reinitialize any dynamic elements if needed
-	  }
-	});
-  
-	// Avoid using these as they prevent bfcache:
-	// window.onunload = function() {};
-	// window.onbeforeunload = function() {};
-  });
   
   document.addEventListener('DOMContentLoaded', function() {
 	const images = document.querySelectorAll('img[src*="/components/photos/"]:not([loading])');
