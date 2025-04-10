@@ -5,6 +5,9 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 1rem; 
+    font-size: 24px;
+    margin-left: 10px;
+
 
 }
 .btn {
