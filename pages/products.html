@@ -40,56 +40,133 @@
       <!-- Preload Google Fonts (with &display=swap for non-blocking behavior) -->
       <link rel="preload" href="https://fonts.googleapis.com/css2?family=Abel&family=Inter:wght@100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
       <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abel&family=Inter:wght@100..900&display=swap"></noscript>
+      
+
+      <link rel="preload" as="image" href="/components/icones/home-20.webp" 
+      imagesrcset="
+        /components/icones/home-15.webp 15w,
+        /components/icones/home-20.webp 20w
+      "
+      imagesizes="(max-width: 600px) 20px, 20px">
+    
+    <link rel="preload" as="image" href="/components/icones/about-20.webp" 
+      imagesrcset="
+        /components/icones/about-15.webp 15w,
+        /components/icones/about-20.webp 20w
+      "
+      imagesizes="(max-width: 600px) 20px, 20px">
+    
+    <link rel="preload" as="image" href="/components/icones/products-20.webp" 
+      imagesrcset="
+        /components/icones/products-15.webp 15w,
+        /components/icones/products-20.webp 20w
+      "
+      imagesizes="(max-width: 600px) 20px, 20px">
+    
+    <link rel="preload" as="image" href="/components/icones/location-20.webp" 
+      imagesrcset="
+        /components/icones/location-15.webp 15w,
+        /components/icones/location-20.webp 20w
+      "
+      imagesizes="(max-width: 600px) 20px, 20px">
     
     </head>
 <body>
   <section>
     <section>
-        <header>
-            <header class="header" id="header">
-              <nav class="navbar container">
-                <div class="navbar-left">
-                <ul class="menu-list">
-                  <li>
-                <div class="logo-black"> <img src="/components/photos/logo-white.webp" alt="Logo Black" style="width: 60px; height: auto;"></div>
-              </li>
+      <header>
+        <header class="header" id="header">
+          <nav class="navbar container">
+            <div class="navbar-left">
+            <ul class="menu-list">
               <li>
-                <a href="../index.html" class="brand" aria-label="move to home"> TALLOW LANCASHIRE CO</a>
-              </li>
+            <div class="logo-black"> <img 
+              src="../components/photos/logo-on-white-bg-200.webp" 
+              srcset="
+                ../components/photos/logo-on-white-bg-100.webp 120w,
+              "
+              sizes="(max-width: 600px) 60px, 60px"
+              style="aspect-ratio: 3 / 3; width: 100%; height: auto;"
+              alt="Logo Black"
+              loading="lazy"
+              decoding="async"
+            /></div>
+          </li>
+          <li>
+            <a href="./index.html" class="brand" aria-label="Home page"> TALLOW LANCASHIRE CO</a>
+            <meta name="description" content="Shop premium organic beef cooking tallow at Tallow Lancashire Co. Our pasture-raised tallow has a high smoke point for perfect cooking. Visit us in Chorley.">
+          </li>
+          </ul>
+          </div>
+            <div class="menu" id="menu">
+              <ul class="menu-list">
+    
+                <li class="menu-item">
+                  <a href="../index.html" class="menu-link" aria-label="Home">
+                    <img src="/components/icones/home-20.webp" class="menu-icon" alt="Home Icon" imagesrcset="
+                        /components/icones/home-15.webp 15w,
+                        /components/icones/home-20.webp 20w
+                      "
+                      imagesizes="(max-width: 600px) 20px, 20px" 
+                      style="aspect-ratio: 0.1 / 0.1; width: 70%; height: auto;"
+                      fetchpriority="high"
+                      decoding="async"
+                      loading="eager"
+                    >
+                    <span class="menu-name">Home</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="/pages/about.html" class="menu-link" aria-label="About Us">
+                    <img src="/components/icones/about-20.webp" class="menu-icon"  alt="Home Icon" imagesrcset="
+                    /components/icones/about-15.webp 15w,
+                    /components/icones/about-20.webp 20w
+                  "
+                  imagesizes="(max-width: 600px) 20px, 20px" 
+                  style="aspect-ratio: 0.1 / 0.1; width: 60%; height: auto;"
+                  fetchpriority="high"
+                  decoding="async"
+                  loading="eager"
+                >
+                    <span class="menu-name" >About</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="/pages/products.html" class="menu-link is-active" aria-label="Products">
+                    <img src="/components/icones/products-20.webp" class="menu-icon" alt="Home Icon" imagesrcset="
+                        /components/icones/products-15.webp 15w,
+                        /components/icones/products-20.webp 20w
+                      "
+                      imagesizes="(max-width: 600px) 20px, 20px" 
+                      style="aspect-ratio: 0.1 / 0.1; width: 45%; height: auto;"
+                      fetchpriority="high"
+                      decoding="async"
+                      loading="eager"
+                    >
+                    <span class="menu-name">Products</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="/pages/contact.html" class="menu-link"   aria-label="Contact Us">
+                    <img src="/components/icones/location-20.webp" class="menu-icon" alt="Home Icon" imagesrcset="
+                    /components/icones/location-15.webp 15w,
+                    /components/icones/location-20.webp 20w
+                  "
+                  imagesizes="(max-width: 600px) 20px, 20px" 
+                  style="aspect-ratio: 0.1 / 0.1; width: 45%; height: auto;"
+                  fetchpriority="high"
+                  decoding="async"
+                  loading="eager"
+                >
+    
+                    <span class="menu-name">Contact</span>
+                  </a>
+                </li>
               </ul>
-              </div>
-                <div class="menu" id="menu">
-                  <ul class="menu-list">
-        
-                    <li class="menu-item">
-                      <a href="../index.html" class="menu-link" aria-label="move to home">
-                        <img src="/components/icones/home.webp" alt="Home" class="menu-icon" style="width: 20px; height: 20px;">
-                        <span class="menu-name" style="font-size: clamp(0.7rem, 2.5vw, 1rem);">Home</span>
-                      </a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="/pages/about.html" class="menu-link" aria-label="move to about us">
-                        <img src="/components/icones/about.webp" alt="ABOUT US" class="menu-icon" style="width: 20px; height: 20px;">
-                        <span class="menu-name" style="font-size: clamp(0.7rem, 2.5vw, 1rem);">About</span>
-                      </a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="/pages/produts.html" class="menu-link is-active"  aria-label="Current Link">
-                        <img src="/components/icones/products.webp" alt="PRODUCTS" class="menu-icon" style="width: 20px; height: 20px;">
-                        <span class="menu-name" style="font-size: clamp(0.7rem, 2.5vw, 1rem);">Products</span>
-                      </a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="/pages/contact.html" class="menu-link" aria-label="move to contact us">
-                        <img src="/components/icones/location.webp" alt="CONTACT/LOCATION" class="menu-icon" style="width: 20px; height: 20px;">
-                        <span class="menu-name" style="font-size: clamp(0.7rem, 2.5vw, 1rem)">Contact</span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
-            </header>
-          </header>
+            </div>
+          </nav>
+        </header>
+      </header>
     </section>
 
     <section>
@@ -100,7 +177,18 @@
     <img src="/components/photos/tallow-shop.webp" alt="Hero banner">
     
     <div class="white-logo-banner">
-      <img src="/components/photos/logo-white-tallow.webp" alt="Logo">
+      <img 
+      src="/components/photos/logo-white-tallow-200.webp"
+      srcset="
+        /components/photos/logo-white-tallow-100.webp 400w,
+        /components/photos/logo-white-tallow-200.webp 600w
+      "
+      alt="Logo"
+      imagesizes="(max-width: 600px) 20px, 20px" 
+      style="aspect-ratio: 0.1 / 0.1; width: 100%; height: auto;"
+      loading="lazy"
+      decoding="async"
+    />
     </div>
     <div class="hero-text">
       <h1>EXPLORE OUR RICH & FLAVORFUL COOKING TALLOWS – DEEP IN TASTE, PURE IN QUALITY!</h1>

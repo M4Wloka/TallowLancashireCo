@@ -47,6 +47,35 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abel&family=Inter:wght@100..900&display=swap"></noscript>
 
 
+  <link rel="preload" as="image" href="/components/icones/home-20.webp" 
+  imagesrcset="
+    /components/icones/home-15.webp 15w,
+    /components/icones/home-20.webp 20w
+  "
+  imagesizes="(max-width: 600px) 20px, 20px">
+
+<link rel="preload" as="image" href="/components/icones/about-20.webp" 
+  imagesrcset="
+    /components/icones/about-15.webp 15w,
+    /components/icones/about-20.webp 20w
+  "
+  imagesizes="(max-width: 600px) 20px, 20px">
+
+<link rel="preload" as="image" href="/components/icones/products-20.webp" 
+  imagesrcset="
+    /components/icones/products-15.webp 15w,
+    /components/icones/products-20.webp 20w
+  "
+  imagesizes="(max-width: 600px) 20px, 20px">
+
+<link rel="preload" as="image" href="/components/icones/location-20.webp" 
+  imagesrcset="
+    /components/icones/location-15.webp 15w,
+    /components/icones/location-20.webp 20w
+  "
+  imagesizes="(max-width: 600px) 20px, 20px">
+
+
 <body>
   <section>
     <header>
@@ -56,12 +85,12 @@
           <ul class="menu-list">
             <li>
           <div class="logo-black"> <img 
-            src="/components/photos/logo-on-white-bg-200.webp" 
+            src="../components/photos/logo-on-white-bg-200.webp" 
             srcset="
-              components/photos/logo-on-white-bg-100.webp 120w,
+              ../components/photos/logo-on-white-bg-100.webp 120w,
             "
             sizes="(max-width: 600px) 60px, 60px"
-            style="aspect-ratio: 3 / 2; width: 100%; height: auto;"
+            style="aspect-ratio: 3 / 3; width: 100%; height: auto;"
             alt="Logo Black"
             loading="lazy"
             decoding="async"
@@ -77,7 +106,7 @@
             <ul class="menu-list">
   
               <li class="menu-item">
-                <a href="#" class="menu-link is-active" aria-label="Current Link">
+                <a href="../index.html" class="menu-link" aria-label="Home">
                   <img src="/components/icones/home-20.webp" class="menu-icon" alt="Home Icon" imagesrcset="
                       /components/icones/home-15.webp 15w,
                       /components/icones/home-20.webp 20w
@@ -92,7 +121,7 @@
                 </a>
               </li>
               <li class="menu-item">
-                <a href="/pages/about.html" class="menu-link" aria-label="About Us">
+                <a href="/pages/about.html" class="menu-link is-active" aria-label="About Us">
                   <img src="/components/icones/about-20.webp" class="menu-icon"  alt="Home Icon" imagesrcset="
                   /components/icones/about-15.webp 15w,
                   /components/icones/about-20.webp 20w
